@@ -27,3 +27,4 @@ terraform init
 terraform fmt # This will ensure the format is consistent
 terraform apply
 ```
+3. After this, Terraform deploys an EC2 instance and outputs its public IP
