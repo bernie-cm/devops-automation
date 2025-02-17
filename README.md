@@ -16,3 +16,14 @@ devops-automation/
 |-- terraform/
 |   |-- main.tf
 |   |-- variables.tf
+
+Continue sketching project outline
+```
+## Step 1: Get Terraform ready
+1. **Install Terraform** and configure AWS creds.
+2. Initialise Terraform and **apply configuration**:
+```sh
+terraform init
+terraform fmt # This will ensure the format is consistent
+terraform apply
+```
