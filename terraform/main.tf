@@ -10,14 +10,22 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-southeast-2"
+  region = var.aws_region
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0b0a3a2350a9877be" # Amazon Linux 2023 AMI
-  instance_type = "t2.micro"
+  ami           = var.ami_id
+  instance_type = var.instance_type
 
   tags = {
     Name = "DevOpsDemoInstance"
   }
+}
+
+
+
+
+resource "aws_instance" "example" {
+  ami           = var.ami_id
+  instance_type = var.instance_type
 }
