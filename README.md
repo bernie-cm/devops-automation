@@ -22,9 +22,14 @@ Continue sketching project outline
 ## Step 1: Get Terraform ready
 1. **Install Terraform** and configure AWS creds.
 2. Initialise Terraform and **apply configuration**:
-```sh
+```bash
 terraform init
 terraform fmt # This will ensure the format is consistent
-terraform apply
 ```
 3. After this, Terraform deploys an EC2 instance and outputs its public IP
+```bash
+$ terraform apply
+$ instance_public_ip = "XX.XX.XXX.XX"
+```
+Once `$ terraform apply` is executed, the infra will be created and an output generated.
+`instance_public_ip = "13.211.168.160"`. What's also cool is that you can then use `terraform output` to query the same information.
