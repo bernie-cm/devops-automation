@@ -31,3 +31,6 @@ terraform fmt # This will ensure the format is consistent
 $ terraform apply
 $ instance_public_ip = "XX.XX.XXX.XX"
 ```
+## Step 2: Set up Ansible with AWS dynamic inventory
+1. **Install Ansible** and **boto3** (AWS SDK for Python)
+...
