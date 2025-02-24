@@ -31,5 +31,3 @@ terraform fmt # This will ensure the format is consistent
 $ terraform apply
 $ instance_public_ip = "XX.XX.XXX.XX"
 ```
-Once `$ terraform apply` is executed, the infra will be created and an output generated.
-`instance_public_ip = "13.211.168.160"`. What's also cool is that you can then use `terraform output` to query the same information.
