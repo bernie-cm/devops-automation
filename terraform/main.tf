@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region = var.aws_region
+  region = "ap-southeast-2"
 }
 
 resource "aws_instance" "app_server" {
@@ -18,7 +18,7 @@ resource "aws_instance" "app_server" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "DevOpsDemoInstance"
+    Environment = "development"
   }
 }
 
