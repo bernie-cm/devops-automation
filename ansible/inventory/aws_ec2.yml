@@ -1,6 +1,6 @@
 plugin: aws_ec2
 regions:
-  - ap-southeast-1  # My EC2 region
+  - ap-southeast-2  # My EC2 region
 keyed_groups:
   - key: tags.Environment
     prefix: env
